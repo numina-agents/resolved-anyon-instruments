@@ -1,0 +1,93 @@
+CANDIDATE, Titania, 2026-11-14 07:35 UTC. NOT INDEPENDENTLY CHECKED.
+Whole target: programme4000. No publication authorized.
+
+1. Conventions and primary inputs.
+p odd, A=F_p^s, zeta=exp(2pi i/p), t:A^3->F_p trilinear,
+omega(a,b,c)=zeta^{t(a,b,c)}. Every pure typeIII representative is of this form.
+Published ERW2008 section3, not typo-laden arxivv1, gives
+ b_a(x,y)=t(a,x,y)+t(x,y,a)-t(x,a,y), beta_a=zeta^{b_a},
+ c_x(a,b)=t(a,b,x)+t(x,a,b)-t(a,x,b), gamma_x=zeta^{c_x}.
+b is linear in a and bilinear in x,y; c is linear in x, bilinear in a,b.
+Flux-a modules are beta_a-projective A representations.
+Tensor charge is rho_ab(x)=gamma_x(a,b) rho_a(x) tensor rho_b(x).
+R braiding is flip after id tensor rho_b(a). Associators are scalar on fixed fluxes.
+The prior Fechisin etal2610.00464 TheoremD18 transports every targetG to such a model.
+
+2. Simultaneous Weyl choices (ordinary finite Heisenberg representation theory).
+B_a=b_a-b_a^T, R_a=rad B_a, 2m_a=rank B_a.
+q_a(x)=-b_a(x,x)/2. Thus delta q_a(x,y)=(b_a(x,y)+b_a(y,x))/2.
+Choose a linear symplectic quotient map T_a:A->F_p^{2m_a}, kernel R_a,
+and Weyl operators W_a(x) with multiplier zeta^{B_a(x,y)/2}.
+For lambda in R_a^*, choose a linear extension ell_{a,lambda} to A and set
+ pi_{a,lambda}(x)=zeta^{q_a(x)+ell_{a,lambda}(x)} W_a(x).
+Its multiplier is beta_a exactly. These are ALL irreducible beta_a-projective
+representations, with dimension p^{m_a}. Reason: the twisted group algebra's
+centre has basis zeta^{-q_a(r)}e_r for r in R_a; each character lambda yields
+the nondegenerate Heisenberg matrix algebra on A/R_a, hence Mat_{p^{m_a}}.
+In particular EVERY pi(x) is a Pauli in the same chosen elementary-anyon register.
+
+3. Full isotypic projector, with all multiplicities retained.
+Let a word consist of fixed simples (a_i,lambda_i), s=sum a_i,
+H_word=tensor C^{p^{m_ai}}, N=sum m_ai. In left parenthesization its charge action is
+ rho_word(x)=zeta^{sum_{j>=2} c_x(a_1+...+a_{j-1},a_j)} tensor_i pi_i(x).
+Because sum q_ai=q_s and sum B_ai=B_s, define
+ U_word(x)=zeta^{-q_s(x)}rho_word(x).
+This is a Pauli with multiplier zeta^{B_s(x,y)/2}.
+For r in R_s, U_word(r) is a GENUINE representation of the additive group R_s
+by commuting Paulis, central in the projective A action.
+The FULL central isotypic projector for output (s,lambda) is EXACTLY
+ P_lambda=1/|R_s| sum_{r in R_s} zeta^{-lambda(r)} U_word(r).
+This follows from the centre description in section2, with no choice of
+Clebsch basis and no refinement of the isotypic factor.
+It equals the joint eigenprojector U_word(r_j)=zeta^{lambda(r_j)} on a basis
+of R_s. A joint measurement of precisely these operators therefore implements
+the same COARSE Luders instrument, retaining the entire irreducible factor
+and fusion multiplicity. Any deterministic/redundant generators are harmless.
+No sum of distinct isotypes has been identified with one Pauli projector.
+
+4. Physical vacuum sector and arbitrary disks.
+For total flux zero, beta_0=1, q_0=0. The physical Hom(1,tensor Xi) is the
+joint +1 eigenspace of rho_word(x), x in A, hence a stabilizer code.
+For a disk subword D with flux s_D and r in R_sD, its Pauli has commutator
+with the global charge x equal to zeta^{B_sD(r,x)}=1. Thus P_lambda preserves
+the full global vacuum sector, not merely a selected irreducible component.
+Associators are scalar on all elementary fixed-flux words. Braiding adjacent
+objects is a swap followed by pi_b(a), a Pauli on one register. These normalize
+the common Pauli algebra and transport the physical code correctly by the
+quasi-Hopf R identity. Any specified disk presented by a routing braid is
+therefore a Clifford conjugate of the same joint-Pauli instrument. Count its
+braid/routing description in L. No later measurement changes the encoding.
+
+5. Cups and known-vacuum caps.
+gamma_x(a,-a)=zeta^{-c_x(a,a)} is a character in x. Define the dual projective
+representation pi_dual(x)=gamma_x(a,-a)^{-1} conjugate(pi_a(x)).
+Its multiplier is beta_-a; the normalized Bell vector in the two registers
+is invariant under gamma pi_a tensor pi_dual. Hence it spans the vacuum
+pair channel. Scalar associator/rigidity corrections affect only its phase.
+Choose W_-a=conjugate(W_a). The required dual label is
+ lambda_dual=-lambda+c_{(.)}(a,a)|R_a.
+Canonical linear extensions can differ by a functional vanishing on R_a;
+every such functional is B_a(v,.) and is implemented by Weyl conjugation.
+Consequently the actual fixed-basis cup differs from the Bell vector by a
+Pauli on one factor. Since p is odd, a and -a are distinct unless a=0;
+the a=0 simples have dimension1, so consistent dual choices cause no conflict.
+Bell pair preparation and a cap restricted to its KNOWN one-dimensional vacuum
+channel are stabilizer operations; normalized cap is an isometry there.
+IMPORTANT: this does NOT cover a binary vacuum/nonvacuum Luders measurement
+with the complementary failed sector retained coherently. Scope question4010.
+
+6. Conditional whole endpoint.
+For the fully resolved simple-charge protocol with known-vacuum caps, every
+reachable pure branch is a stabilizer state in the ONE underlying tensor register.
+Cups add Bell stabilizers, braids are Clifford, exact coarse isotypic measurements
+are joint Pauli measurements, and known-vacuum caps remove a Bell factor.
+Standard stabilizer updates sample exactly in polynomial time for fixed A,p,t,
+using O(n) qupits and polynomial classical description and updates.
+Adaptive classical feedforward does not change this closure. BV-VanNestThm7
+is the PRIOR simulation engine. Need verify conventions, unitarity of transport,
+normalizations and all isotypic/cup assertions; do not count until second check.
+
+7. Strongest natural scope after initial theorem.
+The same idea might extend to arbitrary finite abelian A and arbitrary omega,
+using finite Heisenberg modules over composite groups. NOT established and not
+part of current fixed assessment. Do not present an unjustified scope extension.

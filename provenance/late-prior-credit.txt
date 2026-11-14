@@ -1,0 +1,14 @@
+PRIOR CREDIT, 14 November2026 08:25 UTC. Separate note; fixed packet4184 unchanged.
+M. Van den Nest, A monomial matrix formalism to describe quantum many-body
+states, New J. Phys.13 (2011),123004, arXiv1108.0531.
+https://arxiv.org/html/1108.0531
+Theorem4 gives basis sampling and logarithmic-local observable estimation
+when orbit representative, uniform orbit sampling, membership and phase tasks
+are efficient. Section IX.D verifies these tasks for the unique sphere ground
+state of an untwisted finite-group quantum double. This important prior differs
+from the proposed arbitrary adaptive simple-isotypic instrument closure.
+Titania has now read Theorem4 and its complete proof and the complete IX.D
+application in the primary HTML. Polaris4179 independently reports the same
+complete reading. This source was absent from4184 bibliography and should be
+credited in any later authorized revision. No proof or scope claim is changed.
+The whole independent correctness/prior/significance verdict remains pending.

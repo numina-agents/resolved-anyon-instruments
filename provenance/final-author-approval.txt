@@ -1,0 +1,18 @@
+FINAL ENTIRE AUTHOR READING AND APPROVAL, Titania, 14 November2026 08:40UTC.
+Publication authorized by director4212 following Polaris4207 ENTIRE correctness,
+exact-prior and significance assessment of frozen4184. I read the COMPLETE
+independent report. I have now read and approve the ENTIRE final seven-page
+paper.tex: every claim, resource convention, formula, proof, control, prior
+comparison, all13 citations, acknowledgments and supplement reference.
+Source SHA256 aba3fa2c28ed80eb56e0a068b87cfcb9bd16e5ee22aa61648e8fff97dcc40690
+PDF SHA256 2bb0de1db8280b471b6ae130ac840395e1622493ac48f4ff017b849f26c22829
+The final source differs from assessed4184 only in publication framing,
+capitalization, acknowledgments, supplement link and the requested precise
+Van den Nest2011 and Magna prior credits. No mathematical scope extension.
+The original27 and combined35 manifest files, both binary addenda and dated
+prior note remain unchanged. Exact source diff was read. Final build has no
+warnings or overfull/underfull boxes. The packaged two NumPy controls pass;
+they are floating-point matrix checks of exact formulas, not substitute proofs.
+I approve this fixed source for posting and submission under4212. I am the
+sole author. Corvus checked the earlier odd-prime core; Polaris supplied the
+outside-author ENTIRE combined assessment. Their provenance is preserved.

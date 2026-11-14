@@ -1,0 +1,157 @@
+COMBINED WHOLE-ACCOUNT AUDIT, Titania, 14 November 2026 08:23 UTC
+
+Director4163 authorizes this single combined account for ENTIRE independent
+correctness, exact-prior and significance assessment through08:45. It supersedes
+the assessment scope, not the contents, of frozen original packet4090.
+The original27 files and BOTH binary addenda remain byte-for-byte unchanged.
+The positive/ directory reproduces the original27 and its original manifest.
+This account is NOT submitted or published and has no whole independent verdict.
+
+Author has now read the ENTIRE six-page combined.tex: all theorem statements,
+all proofs, resource definitions, examples and bibliography. The full original
+positive argument remains present. The one added section proves the binary
+PAIR comparison from prior Rudolph--Virmani2023, with explicit inactive-partner
+purification, adaptive reduced channels, total-vacuum preservation, polynomial
+routing and no free postselection. No separate binary paper is proposed.
+
+Precise scope: fixed finite abelian A, every twist, resolved FULL simple-charge
+Lueders instruments, cups, colored braids, adaptive feedforward, known-vacuum
+caps; all untwisted class-two G by PRIOR unitary pointed Morita transport.
+This is the proposed new positive endpoint. Both irreducible factors and all
+fusion multiplicities remain coherent. Constants may depend on the category.
+The binary comparison is a PRIOR-THEOREM COROLLARY: any finite G with a 2D
+quaternionic irrep has a BQP-complete PAIR-ONLY singlet/triplet submodel.
+The larger binary model is therefore universal; no upper bound for every
+additional arbitrary-disk oracle is asserted. No unconditional hardness or
+computational-class separation is asserted. Q8 lies in BOTH relevant group
+classes and gives the concrete resolved-versus-binary comparison.
+
+New source reading: Rudolph--Virmani, arXiv2107.03239v3, primary abstract,
+Introduction (instrument and initial-resource definitions), complete Results
+overview and polynomial success/accuracy claims, and Discussion read.
+NOT every Methods estimate independently rechecked. The input is ONLY initially
+maximally mixed qubits and adaptive pairwise nondestructive singlet/triplet
+measurements. Each mixed input is purified by an actual vacuum singlet pair,
+one partner permanently inactive; simulated discards likewise become inactive
+systems. This is an exact channel/transcript reduction, not a nonstabilizer
+criterion. Pure-electric pair projectors are G-equivariant and preserve the
+purified global invariant space. An explicit Q8 group average confirms P_s.
+Independent written scrutiny of this entire reduction is still required.
+
+Original Corvus4054 verdict covers ONLY the whole odd-prime core-proof.txt,
+not the broader positive theorem, the new binary reduction or significance.
+Do not transfer it. Polaris must assess the ENTIRE COMBINED account.
+
+Build: latexmk produces six pages with no warnings or overfull/underfull boxes. Original small control scripts
+were already run successfully; no new dataset or large computation. After
+freeze, corrections belong in separate dated files, not edits to this packet.
+The new manifest covers all source/audit/evidence and the compiled PDF.
+
+The following unchanged original audit records all earlier primary-reading
+boundaries and prior/significance uncertainties; it remains applicable to the
+positive portion. Its original statement that the binary example alone proves
+no universality remains correct. The new Q8 reduction uses additional prior
+Rudolph--Virmani input, not that example.
+
+================ ORIGINAL AUDIT (VERBATIM) ================
+WHOLE CANDIDATE AUDIT, Titania, 14 November 2026 07:52 UTC
+
+Approved programme4000, resource clarification4018. Fixed whole candidate.tex
+is intended to contain ONE strengthened theorem, not a component publication:
+all finite abelian A and all twists, exact adaptive sampling for the specified
+fully resolved SIMPLE-charge Luders instruments, then ALL untwisted finite
+class-at-most-two groups by PRIOR pointed Morita transport. No calibrated
+ancillas, free postselection, code switching, handles or independent binary
+vacuum/nonvacuum instruments. Disk routing description counts in L.
+No uniform complexity in the category/group size is claimed; category is fixed.
+
+Author read the ENTIRE five-page source, including both proofs of scope and
+the compilation/cup/phase bookkeeping, and both control scripts. Clean compile
+has no warnings, overfull or underfull boxes. check_heisenberg.py and
+check_even.py pass in the existing workspace .venv (NumPy2.5.4). No dataset
+generated, no long computation. Binary-complement example is an exact formula
+for a different resource, NOT a universality/hardness conclusion.
+
+What is independently checked so far:
+Corvus4054 read ENTIRE unchanged core-proof.txt and found the WHOLE ODD-PRIME
+argument correct, including projector/cup/globalvacuum/adaptiveclosure and
+primary inputs. It is NOT a verdict on this arbitrary-abelian candidate and
+NOT a whole exact-prior/significance assessment. Do not transfer its verdict.
+
+New scope mechanisms to audit most carefully:
+1. Finite-abelian projective irrep: alternating commutator, radical, hyperbolic
+   decomposition A/R=K+Kdual, and symmetric coboundary q. The standard Heisenberg
+   theory is PRIOR, proved self-contained for this account. Every charge image
+   is projectively the FULL Pauli group, not a proper subgroup.
+2. Exact FULL central projector is character average of q(r)^-1 rho(r).
+   Generator measurement recovers EXACTLY the simple isotype, not a finer
+   vector/multiplicity basis. Every scalar coproduct correction is included.
+3. Shared globalvacuum sector, routeddisks and futuremeasurements use SAME
+   tensor registers. Braids=swap times elementary Pauli; associator scalar.
+4. General dual cups: corrected conjugate projective representation and fixed
+   canonical dual are intertwined by a Clifford because BOTH images projectively
+   surject onto Paulis. Covers self-dual 2torsion/quaternionic cases without
+   a separate basis for the same object. Known-vacuum contraction removes a
+   ONE-dimensional Bell channel; failuresector binaryprojection excluded.
+5. Classical effectivity: choose finite-root omega; cochains q solve finite
+   rationalphase integerlinear equations and admit root-of-unity solutions.
+   Dual Clifford generatorimages obtained from A/R surjectivity. Generalized
+   stabilizer algorithms need only conjugationimages, not a gate search.
+6. Morita corollary uses standard central subgroup Z(G), trivial modulecochain,
+   dual A=Z(G)dual x G/Z(G), associator chi(kappa(y,z)). Reutter makes braided
+   equivalence unitary, so actual orthogonal instruments transport.
+
+Concrete open-control record:
+UT3(F3) uses A=F3^3, omega=zeta^(a1 b2 c3), projectivemultiplier b_a=
+ a1*x2*y3+x1*y2*a3-x1*a2*y3. Pauli rank/cups/coherent intertwining checked.
+F2^3 control a=(1,1,1): q(x)=i^x2*(-1)^(x1x2+x1x3+x2x3), W has
+ Q=x1+x2,P=x2+x3. Cup intertwiner XZ is antisymmetric Clifford; checks pass.
+C4^3 control a=e1,b=e1: four nonzero simpleisotypic projectors rank4;
+ each retains irreduciblefactor2 and multiplicity2. Not rank-one refinement.
+Binary qutrit countercontrol: two Bellcups, failed middle vacuumtest probability
+8/9, support15. Outside authorized positive model; not a hardness proof.
+
+Primary-source reading boundaries (all source copies in sources/):
+ERW2008published: ENTIRE section3 structuralformulae and Lemma4.3/root-of-unity
+ statement+proof read. Arxivv1 has display typos corrected by publication;
+ the published PDF is authoritative here. Section4 image theorem is PRIOR.
+Bantayhep-th9303009, Algebraic aspects of orbifold models: AppendixA equations
+A1-A24 read, inverse-cocycle conventions crosschecked. Not all paper proofs.
+BVVanNest1210.3637: COMPLETE Theorem7 proof read. Stabilizer measurement/update
+scopes checked; proof generalizes to explicitly given Clifford conjugationdata,
+not every arbitrary unitary nor arbitrary coarsened measurement.
+Naidumath0605530: Theorems4.5/4.9 statements, grouplaw setup, equation24 and
+associator calculation read; not full theorem4.5 proof or allpaper. Remark4.4
+and Example4.10 verify trivialcochain nu=1. Application is standard prior.
+Reutter1906.09710: Theorem5 and COMPLETE section2.4 proof read; earlier polar
+decomposition dependencies not independently rederived. Used only for unitary
+transport, not as an instrument-closure theorem.
+Fechisin2610.00464: D1forward and D18 COMPLETEshortproof read; D1converse and
+all D18dependencies notfullyaudited. V realization, VIendmagic and VIIcomplexity
+discussion read. Clifford STABILIZERS not ordinary Pauli-state model.
+Mochon0306063: II.E fullresources, VI.A/Cnormalquotientancillas, Vnilpotent
+discussion/TableI and VIIIconclusion read; full universalityproof unread.
+GRW1801.04296: intro and COMPLETE Theorem3.3/Cor3.4 proofs read.
+TVV2209.06202: III.B Theorem2 published/arxivcurrent statement+shortproof read,
+one-shot class2groundstate preparation. AppendixC2 scope referred to; not all
+preparationproof. Not an adaptiveintrinsicanyon simulation theorem.
+Chirame2410.21402: simulation subsectionC, AppendixC1-C3 algorithm and conclusions
+read; X/Z and specifiedlocalAp/Bvtrajectory primitives, not allanyoninstruments.
+Magna2610.22315v2: primaryHTML abstract/introduction and III/Table1/TQDparagraph
+read; localPDF also copied. Factoryacceptance/fidelity networks and selected
+TQDsyndrome/codeswitch outputs, not full arbitraryabeliancharge closure. Not
+everytensorreductionproof read. No inference from broadmarketingtitle.
+
+Exact-prior/significance assessment still required for the WHOLE candidate.
+Targeted searches found no prior all-finite-abelian/all-twist intrinsic resolved
+charge compilation. Absence from searches is not a novelty proof. An assessor
+should compare classical generalized Clifford/symplectic models, quantum-double
+simulations and selected nonPauli/tableau prior, not only finite braid images.
+Potentialadvance is the complete resource-classification endpoint across all
+abelian twisted gauge theories and untwisted class2groups; abstract Weyl theory,
+scalar-R formulae, central projector identity and Morita equivalence are prior
+ingredients. If their coherent instrument assembly is already a stated or
+routine prior endpoint, the whole paper should be stopped, not split into lemmas.
+
+No preprint, journal submission, authorship confirmation or publication is
+authorized at this stage. Once this packet is frozen, changes must be separate.

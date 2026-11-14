@@ -1,0 +1,436 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools,hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\newcommand{\C}{\mathbb C}
+\newcommand{\one}{\mathbf1}
+\newcommand{\VEC}{\operatorname{Vec}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\rad}{\operatorname{rad}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\Pauli}{\mathcal P}
+\title{Resolved and binary charge measurements in finite gauge theory}
+\author{Titania}
+\date{14 November 2026. Candidate for whole assessment; not submitted.}
+\begin{document}
+\begin{abstract}
+We give a proposed classical simulation theorem for intrinsic planar anyon
+protocols in every twisted double of a finite abelian group. All simple-charge
+outcomes are resolved, and each outcome implements the coherent isotypic
+L\"uders instrument. In one tensor-product Weyl encoding these instruments are
+joint Pauli eigenspace projections, including their unmeasured representation
+factors and fusion multiplicities. The same encoding handles vacuum pairs,
+colored braids and contraction of a known vacuum channel. A prior pointed Morita equivalence also covers untwisted doubles of every
+finite group of nilpotency class at most two. In contrast, an added coherent
+binary vacuum/nonvacuum pair test gives a BQP-complete submodel whenever the
+gauge group has a two-dimensional quaternionic irreducible representation,
+including the class-two group $Q_8$. This contrast is a direct application of
+the prior singlet/triplet universality theorem of Rudolph--Virmani. This candidate has not yet received
+the required independent whole assessment.
+\end{abstract}
+\maketitle
+
+\section{Protocol and statement}
+Fix a unitary modular category. A planar protocol begins in the vacuum and
+uses the following primitives: creation of a specified simple object and its
+dual in their normalized vacuum channel; colored braids; nondestructive total
+simple-charge measurements along specified disk boundaries; classical adaptive
+feedforward; and contraction of a pair whose total charge is already known to
+be the vacuum. Measurement of charge $c$ has Kraus operator the orthogonal
+central isotypic projector $\Pi_c$. It retains the entire irreducible factor
+and all fusion multiplicities. There is no measurement of a finer fusion basis.
+Contraction is conditional feedforward after an appropriate resolved outcome;
+it is not free postselection. In particular, the additional binary L\"uders
+instrument $\{\Pi_{\one},I-\Pi_{\one}\}$ is not a primitive.
+
+The classical description includes braid words and routing words identifying
+each measuring disk with a standard consecutive disk. Its total length is $L$;
+the maximum number of elementary anyons is $n$. Classical feedforward has
+polynomial running time in this description and the preceding transcript.
+Equivalently, one may use finite routed planar circuit diagrams, counting their
+crossings and routing complexity in $L$. Local types and the category are fixed.
+
+\begin{theorem}\label{thm:main}
+Let $A$ be any finite abelian group and let $[\omega]\in H^3(A;U(1))$.
+For the unitary category $Z(\VEC_A^\omega)$, the protocols just defined admit
+exact classical sampling with expected running time polynomial in $n,L$.
+They admit sampling to total-variation error at most $\epsilon$ in bounded
+time polynomial in $n,L,\log(1/\epsilon)$. Constants and preprocessing may
+depend on $A,[\omega]$. Along every nonzero transcript, the pure conditional
+state has one efficiently updated generalized Pauli stabilizer description.
+\end{theorem}
+
+\begin{corollary}\label{cor:nil2}
+The same conclusion holds for $Z(\VEC_G)$ for every fixed finite group $G$
+with $[G,G]\subset Z(G)$. In particular it covers all groups of class at most
+two and exponent an odd prime, including every $UT_3(\mathbb F_p)$.
+\end{corollary}
+
+The finite braid-image theorem of Etingof--Rowell--Witherspoon~\cite{ERW}
+does not supply this conclusion: measurements change the available resources.
+Mochon's universality theorem for solvable nonnilpotent finite groups has specified
+calibrated ancillary resources~\cite{Mochon}. Galindo--Rowell--Wang~\cite{GRW}
+identify acyclic and nilpotent fusion rules and ask about measurement-assisted
+computational power. The classical adaptive normalizer simulation engine is
+prior work of Bermejo-Vega--Van den Nest~\cite{BV}.
+Ground-state preparation~\cite{TVV}, Clifford-hierarchy lattice realizations
+and code-switching magic~\cite{Fechisin}, and selected quasistabilizer Lindblad
+trajectories~\cite{Chirame} are different instrument statements. Our proposed
+new content is their missing intrinsic all-simple-isotypic compatibility theorem.
+The underlying Weyl representation theory and categorical equivalences are prior.
+
+\section{A simultaneous Weyl model}
+For a finite abelian group $K$, put $\mathcal H_K=\C[K]$, with orthonormal
+basis $|k\rangle$. Define $X_u|k\rangle=|k+u\rangle$ and
+$Z_\chi|k\rangle=\chi(k)|k\rangle$ for $\chi\in\widehat K$.
+We call scalar multiples of $X_uZ_\chi$ projective Paulis. Scalars never change
+an eigenspace measurement, but their exact values are retained in the labels.
+A unitary normalizing this projective Pauli group is Clifford. For the
+simulation we specify a Clifford by its conjugation on Pauli generators.
+
+\begin{lemma}\label{lem:heis}
+Let $A$ be finite abelian and $\beta\in Z^2(A;U(1))$. Set
+$B(x,y)=\beta(x,y)/\beta(y,x)$ and $R=\rad B$.
+There are a finite abelian group $K$, a projective Pauli representation
+$W:A\to U(\mathcal H_K)$ whose kernel modulo scalars is $R$, and a function
+$q:A\to U(1)$ such that all irreducible $\beta$-projective representations are
+\[
+ \pi_\lambda(x)=q(x)\widetilde\lambda(x)W(x),\qquad
+ \lambda\in\widehat R,
+\]
+where $\widetilde\lambda$ is any character extension to $A$.
+We may take $W(r)=I$ for $r\in R$. Every irreducible has dimension
+$|K|=\sqrt{|A/R|}$. In the twisted group algebra the elements
+$q(r)^{-1}e_r$, $r\in R$, form its central group algebra $\C[R]$.
+\end{lemma}
+\begin{proof}
+The commutator $B$ is an alternating bicharacter. Its quotient on $A/R$ is
+nondegenerate. A finite abelian group with a nondegenerate alternating
+bicharacter is an orthogonal sum of hyperbolic cyclic pairs: choose an element
+of maximum order, pair it with a character partner of the same order, split
+off the resulting nondegenerate pair, and induct. Thus
+$A/R\cong K\oplus\widehat K$ with its standard pairing.
+Pulling back $X_uZ_\chi$ gives $W$ with a multiplier $c$ having commutator $B$.
+The symmetric cocycle $\beta/c$ is a coboundary. Indeed its abelian central
+extension by $U(1)$ splits because $U(1)$ is divisible and therefore injective
+as an abelian group. Choose $q$ with $\delta q=\beta/c$.
+Characters of $R$ extend to $A$ by the same injectivity.
+
+The centre of $\C^\beta[A]$ is spanned by the $e_r$, $r\in R$, since commuting
+with $e_x$ multiplies a basis element by $B(x,r)$. The normalized elements
+$q(r)^{-1}e_r$ multiply as $R$. Fixing their character $\lambda$ leaves an
+algebra of dimension $|A/R|$ with scalar centre. As a finite-dimensional
+semisimple complex algebra it is $\operatorname{Mat}_{|K|}(\C)$.
+The Weyl model displayed above realizes this block and all its characters.
+All matrices are unitary, and the image of $A$ modulo scalars is the entire
+projective Pauli group on $\mathcal H_K$.
+\end{proof}
+
+We use the quasi-Hopf conventions in the published \cite[Section 3]{ERW}.
+For additive abelian $A$, define
+\begin{align*}
+ \beta_a(x,y)&=\frac{\omega(a,x,y)\omega(x,y,a)}{\omega(x,a,y)},\\
+ \gamma_x(a,b)&=\frac{\omega(a,b,x)\omega(x,a,b)}{\omega(a,x,b)}.
+\end{align*}
+A simple is a fixed flux $a$ and an irreducible $\beta_a$-projective charge.
+The tensor charge is
+\begin{equation}\label{eq:coproduct}
+ \rho_{X\otimes Y}(x)=\gamma_x(a,b)\rho_X(x)\otimes\rho_Y(x).
+\end{equation}
+The associator on fixed fluxes is a scalar of modulus one, and
+\begin{equation}\label{eq:braid}
+ c_{X,Y}=\operatorname{flip}\circ(I\otimes\rho_Y(a)).
+\end{equation}
+These are prior structural formulas, also recorded in inverse-cocycle
+conventions by Bantay~\cite[Appendix A]{Bantay}.
+For each flux $a$, make the choices of Lemma~\ref{lem:heis} once, writing
+$B_a,R_a,K_a,W_a,q_a$. Elementary-anyon registers are $\C[K_a]$.
+
+\section{The exact coarse instrument}
+\begin{lemma}\label{lem:projector}
+Let $X_1,\ldots,X_m$ be fixed simples with fluxes $a_i$, and put
+$a=\sum_i a_i$. On the entire tensor register
+$\mathcal H=\bigotimes_i\C[K_{a_i}]$, let $\rho(x)$ be its actual charge action,
+including every factor in \eqref{eq:coproduct}. For $r\in R_a$ put
+$U(r)=q_a(r)^{-1}\rho(r)$. Then $U$ is an ordinary representation of $R_a$
+by commuting projective Paulis. The full isotypic projector for charge
+$\lambda\in\widehat R_a$ is
+\begin{equation}\label{eq:projector}
+ \Pi_{a,\lambda}=\frac1{|R_a|}\sum_{r\in R_a}\overline{\lambda(r)}U(r).
+\end{equation}
+Measuring a generating set of these commuting operators implements exactly
+the L\"uders instrument $v\mapsto\Pi_{a,\lambda}v$, with all multiplicities intact.
+\end{lemma}
+\begin{proof}
+Each $\rho_{X_i}(x)$ is a scalar Pauli by Lemma~\ref{lem:heis}. The tensor
+corrections in \eqref{eq:coproduct} are scalars, so the same holds for $\rho(x)$.
+Since the coproduct is an algebra homomorphism, its multiplier is precisely
+$\beta_a$. Its restriction to the central normalized units
+$q_a(r)^{-1}e_r$ is therefore the ordinary commuting representation $U$.
+Lemma~\ref{lem:heis} identifies these central characters with all simple
+isotypes, proving \eqref{eq:projector}. This is a central idempotent, hence is
+the identity on the entire irreducible factor and multiplicity of that isotype.
+All operators are unitary, so the idempotents are orthogonal projectors.
+
+The tuple of eigenvalues on generators of $R_a$ determines exactly one
+character of $R_a$, hence exactly one simple charge. Sequentially measuring
+these commuting generators has joint Kraus projector \eqref{eq:projector}.
+It does not distinguish vectors within an isotype. When $U(r)$ is a scalar
+times a standard Pauli, measure that standard Pauli and restore the known
+scalar in the classical outcome label. This changes no eigenspace. Redundant
+or deterministic generators add no information. In particular, the argument
+does not refine a charge into irreducible-vector or multiplicity outcomes.
+\end{proof}
+
+For total flux zero choose $q_0=1$. The physical space
+$\Hom(\one,\bigotimes_i X_i)$ is the invariant subspace for $\rho(x)$,
+$x\in A$, and is therefore a joint Pauli eigenspace, a stabilizer code.
+A standard subdisk's central idempotent commutes with the full algebra action,
+so preserves this physical space. Alternatively its Pauli commutator with a
+global charge is $B_a(r,x)=1$ for $r\in R_a$.
+Reassociation is scalar on each fixed elementary-flux word.
+Equation~\eqref{eq:braid} is a register swap followed by a Pauli on one factor.
+It is Clifford and carries the physical invariant space to the correctly
+reordered one by the quasitriangular identity. A routed disk instrument is
+therefore a Clifford conjugate of Lemma~\ref{lem:projector}, in the same
+persistent tensor registers. No fusion-basis change or new polarization is
+needed after a measurement.
+
+\section{Dual cups and caps, including 2-torsion}
+\begin{lemma}\label{lem:cup}
+In the choices of elementary registers above, every normalized simple/dual
+vacuum cup is a Clifford image of a maximally entangled pair. A cap on an
+already known vacuum channel is the inverse stabilizer isometry.
+\end{lemma}
+\begin{proof}
+If $X$ has flux $a$ and charge $\pi$, then on the conjugate Hilbert space set
+\[
+ \pi^\vee(x)=\gamma_x(a,-a)^{-1}\overline{\pi(x)}.
+\]
+The identity asserting that \eqref{eq:coproduct} has multiplier $\beta_0=1$
+shows that this has multiplier $\beta_{-a}$. The normalized Bell vector is
+invariant for $\gamma_x(a,-a)\pi(x)\otimes\pi^\vee(x)$. It consequently
+spans the unique vacuum channel and realizes the dual object. The scalar
+rigidity corrections only change the phase of its normalized cup.
+
+The commutator form for $-a$ is the inverse of that for $a$, so choose the
+same abstract $K$ for the two elementary registers. The conjugates of standard
+Paulis are standard Paulis. The desired representation $\pi^\vee$ and the
+already chosen irreducible representation of its simple type are unitarily
+intertwined. Let $V$ be an intertwiner. Both representations projectively
+surject onto the Pauli group, by Lemma~\ref{lem:heis}. Hence conjugation by $V$
+carries the entire projective Pauli group onto itself: $V$ is Clifford.
+This reasoning also applies when $a=-a$ and when the simple is self-dual;
+it does not require a separate basis choice for the same object. Orthogonal
+or symplectic self-duality changes the intertwiner but not its Clifford property.
+The actual cup is thus $(I\otimes V)$ applied to Bell, up to phase and choice
+of direction for $V$.
+
+Bell on $\C[K]\otimes\C[K]$ is stabilized by $X_u\otimes X_u$ and
+$Z_\chi\otimes Z_{\bar\chi}$. Its preparation and inverse on its known
+one-dimensional channel are stabilizer operations. A known Bell factor is
+unentangled from the complementary registers; applying the inverse Clifford
+and discarding that factor implements the normalized cap.
+\end{proof}
+
+\section{Compilation and the group corollary}
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Precompute the finite charge models, cocycles, dual intertwiners and their
+Pauli conjugation data. Choose a root-of-unity representative of $[\omega]$
+using \cite[Lemma 4.3]{ERW}. The symmetric-coboundary equations defining
+$q_a$ are a finite integer linear system for phases with rational right-hand
+side, so Smith normal form supplies root-of-unity choices. Thus every scalar
+table is encoded by integer exponents modulo a fixed denominator. Conjugation
+data for a dual intertwiner are obtained by lifting each Pauli generator through
+the surjection $A/R_a$ in Lemma~\ref{lem:heis} and using its intertwining identity.
+All these constants depend only on the fixed category.
+A tensor word uses $\C[K]$ for $K=\prod_i K_{a_i}$, with
+$\log|K|=O(n)$. Start with the vacuum stabilizer state. By Lemma~\ref{lem:cup},
+each allowed pair creation adds a stabilizer Bell pair followed by a Clifford.
+Colored braids and reassociations preserve the Pauli description.
+Lemma~\ref{lem:projector} realizes exactly every allowed charge instrument,
+including arbitrary later routed disks. Known-vacuum contraction is covered
+by Lemma~\ref{lem:cup}. Induction gives one stabilizer description on every
+nonzero transcript, with all physical multiplicities retained.
+
+The generalized stabilizer update and sampling algorithms of \cite{BV}
+therefore apply. For unitary updates their proof needs computable conjugation
+on Pauli generators; here it is explicit for braids and finite precomputed
+dual intertwiners. It does not require searching for a decomposition of a
+Clifford into gates. Commuting projective Pauli measurements are standard
+Pauli measurements with known scalar relabeling, as in the projector lemma.
+Their number per disk is bounded by the fixed group $A$.
+Thus their stabilizer algorithms have polynomial cost in $n,L$.
+Adaptive feedforward chooses the next operation from the sampled transcript.
+The only unbounded runtime is exact finite-uniform random sampling, implementable
+by rejection from random bits. Its exponential rejection tail gives the stated
+bounded-time approximation after $O(\log(L/\epsilon))$ attempts per sample.
+No conditioning on a rare successful transcript has been granted for free.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:nil2}]
+Put $Z=Z(G)$ and $Q=G/Z$. The standard pointed Morita equivalence using
+the subgroup $Z$ identifies the dual of $\VEC_G$ with
+$\VEC_{\widehat Z\times Q}^{\eta}$, where $\eta$ is a unitary associator.
+This is the central-subgroup, trivial-cochain specialization of
+\cite[Theorems 4.5 and 4.9]{Naidu}; in a section of $G\to Q$ with central
+extension cocycle $\kappa$, its associator is
+$\eta((\chi,x),(\psi,y),(\xi,z))=\chi(\kappa(y,z))$.
+Since $G$ has class at most two, $Q$ and $\widehat Z\times Q$ are abelian.
+Taking centres gives the braided equivalence used here, also recorded in
+\cite[Theorem D.1]{Fechisin}. Both categories are unitary; Reutter's
+\cite[Theorem 5]{Reutter} makes the braided equivalence unitary.
+It therefore preserves inner products, normalized cups, braids and orthogonal
+simple-isotypic projectors, hence the exact protocol and its probabilities.
+All relabeling and local equivalence data are fixed-category preprocessing.
+Apply Theorem~\ref{thm:main}.
+\end{proof}
+
+\section{Controls and the additional binary resource}
+For $A=(\mathbb Z/4)^3$ and $\omega(a,b,c)=i^{a_1b_2c_3}$, take two
+flux-$e_1$ charge spaces with $\pi(x)=X^{x_3}Z^{x_2}$ on $\C[\mathbb Z/4]$.
+Their total flux is $2e_1$. Its radical is generated by $e_1,2e_2,2e_3$;
+the first acts trivially, and the other two act as $Z^2\otimes Z^2$ and
+$X^2\otimes X^2$. There are four nonzero coarse isotypic projections of rank
+$4$, each retaining an irreducible factor of dimension $2$ and multiplicity $2$.
+This tests a changing Weyl-register size and a genuinely unmeasured multiplicity.
+For $A=\mathbb F_2^3$, the same type-III formula and flux $(1,1,1)$ give
+a two-dimensional charge with a self-dual cup whose intertwiner is $XZ$.
+It is antisymmetric but Clifford, illustrating that a self-dual 2-torsion
+sector is included in Lemma~\ref{lem:cup}.
+
+The restriction to resolved simple-charge outcomes has mathematical content.
+For the $UT_3(\mathbb F_p)$ model take $A=\mathbb F_p^3$ and
+$\omega(a,b,c)=\exp(2\pi i a_1b_2c_3/p)$, $p$ odd.
+At flux $a=(1,0,0)$ an irreducible charge has dimension $p$.
+Choose dual coordinates so cups are Bell and form two vacuum pairs with
+colors $a,-a,a,-a$:
+\[
+ \psi=\frac1p\sum_{i,j}|i,i,j,j\rangle.
+\]
+The middle pair's vacuum projector is Bell projection. Consequently
+\[
+ \Pi_{\one,23}\psi=\frac1{p^2}\sum_{i,k}|i,k,k,i\rangle.
+\]
+The failed binary branch $(I-\Pi_{\one,23})\psi$ has support size
+$2p^2-p$ and probability $1-p^{-2}$. Its support size is not a power of $p$,
+so this vector is not a prime-qudit Pauli stabilizer state. All vectors lie
+in the physical total-vacuum sector. This is an actual additional-instrument
+failure of the proposed Pauli closure, not a claim of universality or of
+classical hardness. It does not occur in the resolved-instrument theorem.
+
+
+\section{A universal pair-test submodel: a prior universality reduction}
+We now enlarge the resources by allowing the nondestructive binary PAIR
+instrument $\{\Pi_{\one},I-\Pi_{\one}\}$, with all failed-sector coherences
+retained. The next proposition is a short reduction to prior work, not a
+separate new universality theorem. It makes the resource boundary of
+Theorem~\ref{thm:main} concrete.
+
+\begin{proposition}\label{prop:binary}
+Let $G$ be a finite group with a two-dimensional irreducible quaternionic
+unitary representation $V$. In $Z(\VEC_G)$ put $X=(1,V)$, the corresponding
+pure-electric simple. The submodel using only vacuum $X,X$ pair creation,
+routing, adaptive binary vacuum/nonvacuum PAIR measurements, and classical
+output has computational power BQP. Therefore the larger model containing
+these primitives is quantum computationally universal. In particular this
+applies to the nilpotency-class-two group $Q_8$.
+\end{proposition}
+\begin{proof}
+The pure-electric symmetric subcategory is $\operatorname{Rep}(G)$ with its
+ordinary representation inner products. Since $V$ is irreducible and
+quaternionic, the unique invariant line of $V\otimes V$ is antisymmetric.
+In dimension two it is exactly $\Lambda^2V$, and after a unitary basis
+identification its normalized vector is the two-qubit singlet $|s\rangle$.
+Thus the ACTUAL orthogonal vacuum projector is $P_s=|s\rangle\langle s|$,
+and the added instrument is exactly $\{P_s,I-P_s\}$ on the two representation
+registers. The basis identification is mathematical, not an extra physical gate.
+
+Rudolph--Virmani~\cite{RV} prove that adaptive nondestructive singlet/triplet
+measurements on arbitrary pairs, with initially maximally mixed individual
+qubits, simulate bounded-error quantum computation using polynomial resources.
+Their construction includes state preparation and the success/accuracy
+requirements; no additional polarized ancillary states or single-qubit gates
+are assumed. We use their theorem, not an inference from a nonstabilizer state.
+
+To supply the inputs, create independent normalized vacuum $X,X$ pairs and
+keep one member of each pair permanently inactive. The reduced active input
+is $(I/2)^{\otimes N}$. The inactive partners purify it, so the FULL anyonic
+state remains in total vacuum. When the simulated protocol discards a qubit,
+leave that anyon permanently untouched and ignore it in the classical output;
+this has exactly the same reduced-state effect and needs no physical discard
+primitive. For every adaptive history, the active reduced channel is therefore
+identical to the prior singlet/triplet protocol. Every actual outcome is sampled;
+no successful history is granted by free postselection. The number of inactive
+partners and abandoned systems is at most the polynomial number of qubits
+created by that protocol.
+
+Every pair projector commutes with the diagonal action of $G$. It therefore
+preserves the purified total-vacuum space $\Hom(\one,X^{\otimes n})$.
+Pure-electric braids are ordinary
+swaps, allowing any required pair to be routed together with polynomial
+overhead; the routing is counted in $L$. This proves BQP universality.
+Conversely, this PAIR-ONLY submodel is in BQP, since its preparations, swaps
+and two-qubit projectors have fixed constant-dimensional quantum-circuit
+realizations. This upper bound is for the stated submodel; no upper-complexity
+claim about additional arbitrary-disk oracles is needed.
+\end{proof}
+
+For $Q_8=\{\pm1,\pm i,\pm j,\pm k\}$ choose
+$\rho(i)=iX$, $\rho(j)=iY$, $\rho(k)=-iZ$ and $\rho(-1)=-I$.
+Then directly
+\[
+ \Pi_{\one}=\frac18\sum_{g\in Q_8}\rho(g)\otimes\rho(g)
+ =\frac14(I\otimes I-X\otimes X-Y\otimes Y-Z\otimes Z)=P_s.
+\]
+Here $V^{\otimes2}=\one\oplus\chi_1\oplus\chi_2\oplus\chi_3$.
+A FULL simple-charge measurement resolves the four Bell lines, whereas the
+binary instrument preserves their three-dimensional triplet sum coherently.
+The first is covered by Corollary~\ref{cor:nil2}; the second by
+Proposition~\ref{prop:binary}. An efficient sampler for the universal model
+would imply the usual complexity-class collapse, which is not asserted.
+The significance is the different instruments, not the creation of a new
+finite-group phase or an unconditional computational separation.
+
+\begin{thebibliography}{99}
+\bibitem{ERW} P. Etingof, E. Rowell, S. Witherspoon, Braid group representations
+from twisted quantum doubles of finite groups, Pacific J. Math. 234 (2008), 33--41.
+\url{https://msp.org/pjm/2008/234-1/pjm-v234-n1-p03-s.pdf}.
+\bibitem{Bantay} P. Bantay, Algebraic aspects of orbifold models,
+\url{https://arxiv.org/abs/hep-th/9303009}.
+\bibitem{BV} J. Bermejo-Vega, M. Van den Nest, Classical simulations of
+Abelian-group normalizer circuits with intermediate measurements,
+Quantum Inf. Comput. 14 (2014), 181--216.
+\url{https://arxiv.org/abs/1210.3637}.
+\bibitem{Mochon} C. Mochon, Anyon computers with smaller groups,
+Phys. Rev. A 69 (2004), 032306. \url{https://arxiv.org/abs/quant-ph/0306063}.
+\bibitem{GRW} C. Galindo, E. Rowell, Z. Wang, Acyclic anyon models,
+thermal anyon error corrections, and braiding universality,
+\url{https://arxiv.org/abs/1801.04296}.
+\bibitem{TVV} N. Tantivasadakarn, A. Vishwanath, R. Verresen,
+Hierarchy of topological order from finite-depth unitaries, measurement,
+and feedforward, PRX Quantum 4 (2023), 020339.
+\url{https://arxiv.org/abs/2209.06202}.
+\bibitem{Fechisin} C. Fechisin et al., Clifford-hierarchy stabilizer formalism
+with applications to twisted quantum doubles,
+\url{https://arxiv.org/abs/2610.00464}.
+\bibitem{Chirame} S. Chirame, A. Prem, S. Gopalakrishnan, F. Burnell,
+Stabilizing non-Abelian topological order against heralded noise via local
+Lindbladian dynamics, PRX Quantum 6 (2025), 030363.
+\url{https://arxiv.org/abs/2410.21402}.
+\bibitem{Naidu} D. Naidu, Categorical Morita equivalence for group-theoretical
+categories, Comm. Algebra 35 (2007), 3544--3565.
+\url{https://arxiv.org/abs/math/0605530}.
+\bibitem{Reutter} D. Reutter, Uniqueness of unitary structure for unitarizable
+fusion categories, Comm. Math. Phys. (2023).
+\url{https://arxiv.org/abs/1906.09710}.
+\bibitem{RV} T. Rudolph, S. S. Virmani, The two-qubit singlet/triplet
+measurement is universal for quantum computing given only maximally-mixed
+initial states, Nature Communications (2023).
+\url{https://arxiv.org/abs/2107.03239v3}.
+\end{thebibliography}
+\end{document}

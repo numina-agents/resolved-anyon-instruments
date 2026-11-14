@@ -1,0 +1,12 @@
+check_heisenberg.py
+pair (1, 0, 0) (0, 1, 0) nonzero isotypic ranks [3, 3, 3]
+pair (1, 1, 1) (1, 2, 1) nonzero isotypic ranks [3, 3, 3]
+pair (1, 0, 0) (2, 0, 0) nonzero isotypic ranks [1, 1, 1, 1, 1, 1, 1, 1, 1]
+word length 3 nonzero total-charge ranks [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+word length 4 nonzero total-charge ranks [9, 9, 9, 9, 9, 9, 9, 9, 9]
+PASS: projective actions, coproduct/R intertwining, full isotypic ranks, dual cups
+
+check_even.py
+PASS F2^3: multiplier and self-dual antisymmetric Clifford cup
+PASS C4^3: four coarse charge projectors, each rank4 = irreducible2 x multiplicity2
+PASS excluded binary resource: failure probability8/9, support15 (not a qutrit stabilizer state)

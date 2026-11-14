@@ -1,0 +1,71 @@
+SEPARATE CANDIDATE ADDENDUM, Titania, 14 November 2026 08:09 UTC.
+The 27 frozen files in4090 are UNCHANGED. This is not their assessed content.
+The following is a direct corollary of PRIOR STP=BQP, not an independent
+new universality theorem or a proposed separate publication.
+
+Proposition (resource comparison).
+Let G be a finite group with a two-dimensional irreducible quaternionic
+unitary representation V. In Z(Vec_G), allow the fully resolved protocol's
+vacuum-pair creation and routing, and ADD nondestructive binary vacuum versus
+nonvacuum Luders measurement with coherent failed sector. This stronger model
+is BQP-universal using only the pure-electric simple X=(1,V). In particular
+G=Q8 gives a nilpotency-class-two example. No polarized calibrated ancillary
+states or free postselection are needed.
+
+Proof.
+The pure-electric full symmetric subcategory is Rep(G), with its usual tensor
+representation inner products. Quaternionic irreducibility means the unique
+invariant in V tensor V is an antisymmetric nondegenerate bilinear pairing.
+Since dimV=2, its normalized invariant vector is the ordinary two-qubit singlet
+under a unitary identification V=C^2. Equivalently, Lambda^2V is the trivial
+representation and Sym^2V has no invariant. Therefore the ACTUAL vacuum
+charge projector on X tensor X is exactly P_s, and the extra binary instrument
+is exactly {P_s,I-P_s}, with its full three-dimensional triplet sector coherent.
+
+Create independent X,X vacuum pairs. Keep one member of each pair active and
+never interact with its partner. The reduced active input is (I/2) tensor N.
+No physical trace/discard resource is necessary: the inactive partners simply
+purify the mixed qubits and remain part of the total-vacuum state. The same
+purification argument applies whenever a simulated protocol discards a qubit:
+never interact with it again and ignore it in classical output processing.
+The total number of physical anyons is polynomial in the simulated resources.
+
+On any chosen pair of active X anyons, perform the binary vacuum measurement.
+Its reduced action is exactly the singlet/triplet measurement of Rudolph and
+Virmani, arXiv2107.03239v3 (2023), whose theorem is STP=BQP with initially
+maximally mixed qubits and adaptive pairwise nondestructive s/t measurements.
+Their complete bounded-error polynomial-resource computation is therefore
+reproduced, with every actual outcome sampled; none is freely postselected.
+Routing arbitrary pairs has polynomial overhead using symmetric pure-electric
+braids. Every operator is G-equivariant, so the full purified state stays in
+the physical TOTAL-VACUUM sector. Upper BQP containment holds because this
+fixed finite theory's allowed local operations have constant-dimensional
+unitary/measurement realizations. This proves the claimed computational power.
+
+Explicit Q8 check.
+For Q8={+/-1,+/-i,+/-j,+/-k}, take
+ rho(i)=iX, rho(j)=iY, rho(k)=-iZ, rho(-1)=-I.
+Then
+ (1/8) sum_g rho(g) tensor rho(g)
+   = (I tensor I-X tensor X-Y tensor Y-Z tensor Z)/4=P_s.
+The pure-electric fusion X^2=1+chi1+chi2+chi3 resolves the triplet into THREE
+distinct one-dimensional nontrivial charge channels. The full simple-charge
+instrument thus resolves the complete Bell basis, whereas the added binary
+instrument preserves all triplet coherences. This is exactly the distinction
+excluded from the positive sampler. Q8 has class2 and exponent4, so it is
+covered by the BROADER positive theorem in4090, not the original odd-prime test.
+
+Prior/significance boundary.
+The universality input is wholly Rudolph-Virmani2023 and must receive full
+credit. The reduction is short and may already be implicit in that literature;
+do not advertise it as a newly solved standalone nilpotent-universality problem.
+Its role is a sharp actual computational-resource comparison in the SAME
+scholarly account as the all-abelian-twist resolved-instrument sampler.
+It is stronger than the qutrit support15 example, but does not alter or refute
+the frozen positive theorem's explicitly different resource model.
+
+Source reading: primary arxivv3 abstract, Introduction definitions of P_s/P_t,
+maximally-mixed input assertion, Results proof strategy/polynomial-cost claims,
+and Discussion resource scope read. Full Methods estimates not independently
+rederived. Before counting this addendum, obtain a second written check of
+the representation/gauge-purification reduction and exact resource match.

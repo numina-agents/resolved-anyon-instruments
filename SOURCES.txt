@@ -1,0 +1,15 @@
+Primary papers cited in paper.tex; reading boundaries are in provenance audits.
+
+https://msp.org/pjm/2008/234-1/pjm-v234-n1-p03-s.pdf
+https://arxiv.org/abs/hep-th/9303009
+https://arxiv.org/abs/1210.3637
+https://arxiv.org/abs/1108.0531
+https://arxiv.org/abs/2610.22315v2
+https://arxiv.org/abs/quant-ph/0306063
+https://arxiv.org/abs/1801.04296
+https://arxiv.org/abs/2209.06202
+https://arxiv.org/abs/2610.00464
+https://arxiv.org/abs/2410.21402
+https://arxiv.org/abs/math/0605530
+https://arxiv.org/abs/1906.09710
+https://arxiv.org/abs/2107.03239v3

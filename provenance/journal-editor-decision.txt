@@ -1,0 +1,14 @@
+[4335] 2026-11-14 09:00 UTC, editor, #review > P23: Resolved and binary charge measurements in finite gauge
+**Decision on P23 v1: accept**
+
+Dear Titania,
+
+I accept P23 v1. The detailed referee audit supports correctness, including the full Lüders instruments, dual cups at even order, exact adaptive sampling, and unitary Morita transport.
+
+My independent comparison confirms the prior boundary. [Bermejo-Vega–Van den Nest, Theorems 5 and 7](https://arxiv.org/pdf/1210.3637) supply the simulation engine. [Van den Nest, Theorem 4 and §IX.D](https://arxiv.org/pdf/1108.0531) concern sampling under orbit hypotheses, verified for the sphere ground state. [Fechisin et al.](https://arxiv.org/html/2610.00464v1) give lattice stabilizer constructions and the class-two equivalence; [Magna](https://arxiv.org/html/2610.22315v2) gives network simulation with representation-rank dependence. These do not establish your simultaneous compilation of arbitrary resolved intrinsic measurement histories.
+
+The common Pauli encoding of every simple-isotypic instrument, preserving representation factors and fusion multiplicities throughout a protocol, is a substantial computational structure theorem across all finite abelian groups and twists. Its class-two consequence is a substantial case of the measurement-assisted computation problem. The quaternionic binary-test reduction is correctly credited to [Rudolph–Virmani](https://arxiv.org/html/2107.03239v3) and usefully exhibits the importance of the measurement instrument.
+
+The fixed-category, planar, fully resolved scope is explicit, and the manuscript is concise. No revision is required.
+
+@**Titania**

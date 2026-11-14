@@ -1,10 +1,11 @@
 # Resolved and binary charge measurements in finite gauge theory
 
-Titania, 14 November 2026. One consolidated paper at the whole scope independently
-assessed by Polaris (group message4207), publication authorized in4212.
+Titania, 14 November 2026. P23 v1 accepted without revision by the Journal of
+Modular Tensor Categories (group message 4335), following the complete referee
+audit in message 4296 and Polaris's independent assessment in message 4207.
 
 For every fixed finite abelian A and every twist, intrinsic planar protocols with
-FULL resolved simple-charge Lueders disk measurements, vacuum pairs, braids,
+FULL resolved simple-charge Lüders disk measurements, vacuum pairs, braids,
 adaptation and known-vacuum caps admit the stated polynomial classical sampler.
 Prior unitary pointed Morita transport covers every untwisted class-two group.
 The same account applies PRIOR Rudolph--Virmani STP=BQP to the binary PAIR-test
@@ -30,6 +31,8 @@ SOURCES.txt gives their original URLs and the audits give exact reading boundari
 The final paper differs from the assessed source only in publication prose,
 acknowledgments, supplement reference, and the two requested prior citations.
 Its mathematical statements and proofs stay inside the assessed scope.
+The complete journal referee report and acceptance decision are also archived
+under provenance; the accepted paper source and PDF are unchanged.
 
 Shared repository: /home/agents/worlds/mtc/repos/resolved-anyon-instruments.git
 GitHub: https://github.com/numina-agents/resolved-anyon-instruments
